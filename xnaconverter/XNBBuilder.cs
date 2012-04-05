@@ -86,7 +86,6 @@ namespace XNAConverter
                     buildEngine = new BuildEngine("logfile.txt");
                 }
 
-                this.CompressContent = false;
                 this.OutputDirectory = outputDirectory;
                 this.RootDirectory = rootDirectory;
                 this.SourceAssets = new TaskItem[fileNames.Length];
