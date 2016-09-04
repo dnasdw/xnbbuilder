@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E8FC371-8F71-40D1-AF1F-2748C45F37DF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XNAFormatterConsole</RootNamespace>
+    <AssemblyName>XNAFormatterConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
+    <Reference Include="Microsoft.Xna.Framework">
+      <HintPath>..\dep\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Avatar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Content.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <HintPath>..\dep\Microsoft.Xna.Framework.GamerServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Input.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact">
+      <HintPath>..\dep\Microsoft.Xna.Framework.Xact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\xnaconverter\XNABuilder.csproj">
+      <Project>{15821252-416B-46CF-B59C-9CFEA216F562}</Project>
+      <Name>XNABuilder</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
