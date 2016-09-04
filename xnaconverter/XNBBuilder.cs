@@ -166,7 +166,7 @@ namespace XNAConverter
 
                 buildEngine.Begin();
 
-                string xnaInstallFolder = Environment.ExpandEnvironmentVariables("%XNAGSv4%") + @"References\Windows\x86\";
+                string xnaInstallFolder = AppDomain.CurrentDomain.BaseDirectory;
 
                 this.PipelineAssemblies = new TaskItem[]
                 {
