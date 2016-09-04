@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNAFormatter", "XNAFormatter\XNAFormatter.csproj", "{01B3DB22-6254-4183-A836-AEA401030F9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNABuilder", "xnaconverter\XNABuilder.csproj", "{15821252-416B-46CF-B59C-9CFEA216F562}"
